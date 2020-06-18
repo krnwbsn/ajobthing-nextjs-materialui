@@ -1,0 +1,72 @@
+{
+  "name": "nextjs-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./src/server.js",
+    "build": "next build ./src ",
+    "start": "next start ./src",
+    "lint": "esw src/utils src/components --color",
+    "lint:watch": "npm run lint -- -w",
+    "storybook": "start-storybook -s ./src -p 5000",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-rc.3",
+    "@material-ui/core": "^4.5.0",
+    "@material-ui/icons": "^4.4.3",
+    "autoprefixer": "^9.3.1",
+    "axios": "^0.18.0",
+    "clean-css": "^4.2.1",
+    "codemirror": "^5.39.0",
+    "cssnano": "^3.10.0",
+    "fs": "0.0.1-security",
+    "jss": "^9.8.7",
+    "moment": "^2.22.2",
+    "next": "^9.1.1",
+    "postcss": "^6.0.23",
+    "prop-types": "^15.6.2",
+    "query-string": "^6.1.0",
+    "react": "^16.8.0",
+    "react-codemirror": "^1.0.0",
+    "react-dom": "^16.8.0",
+    "react-jss": "^8.6.0",
+    "react-popper": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@storybook/addon-actions": "^3.4.8",
+    "@storybook/addon-links": "^3.4.8",
+    "@storybook/addons": "^3.4.8",
+    "@storybook/react": "^3.4.8",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^8.2.5",
+    "eslint": "^5.9.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-watch": "^4.0.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-syntax-highlighter": "^7.0.4",
+    "react-test-renderer": "^16.4.1"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tools/assetsTransformer.js",
+      "\\.(css|less)$": "<rootDir>/tools/assetsTransformer.js"
+    },
+    "setupFiles": [
+      "raf/polyfill",
+      "./tools/enzymeTestAdapterSetup.js"
+    ],
+    "collectCoverageFrom": [
+      "src/components/**/*.js",
+      "src/pages/**/*.js",
+      "src/utils/**/*.js"
+    ]
+  }
+}
