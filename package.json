@@ -20,7 +20,7 @@
     "@material-ui/core": "^4.5.0",
     "@material-ui/icons": "^4.4.3",
     "autoprefixer": "^9.3.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "clean-css": "^4.2.1",
     "codemirror": "^5.39.0",
     "cssnano": "^3.10.0",
