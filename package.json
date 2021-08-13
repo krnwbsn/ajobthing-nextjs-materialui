@@ -27,7 +27,7 @@
     "fs": "0.0.1-security",
     "jss": "^9.8.7",
     "moment": "^2.22.2",
-    "next": "^9.1.1",
+    "next": "^11.1.0",
     "postcss": "^6.0.23",
     "prop-types": "^15.6.2",
     "query-string": "^6.1.0",
